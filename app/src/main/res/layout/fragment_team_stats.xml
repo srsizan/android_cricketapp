@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FDFDFD"
+    tools:context=".ui.team.TeamStatsFragment">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#422C5E"
+        android:paddingBottom="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Matches"
+             />
+
+        <TextView
+            android:id="@+id/teamname"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Team" />
+
+        <TextView
+            android:id="@+id/other_team_Tv"
+            android:layout_width="0dp"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Other Team" />
+
+        <TextView
+            android:id="@+id/percentagetv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Percentage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:background="#6B4A93"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Total" />
+
+        <TextView
+            android:id="@+id/totalteamwon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/totalotherwon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/totalpercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:text="75" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#43216E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout2">
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Home" />
+
+        <TextView
+            android:id="@+id/hometeamwon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/homeotherwon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/homepercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:text="75" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#563380"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout3">
+
+        <TextView
+            android:id="@+id/away"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="Away" />
+
+        <TextView
+            android:id="@+id/awayteamwon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="10" />
+
+        <TextView
+            android:id="@+id/awayotherwon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/awaypercentage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:text="75" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

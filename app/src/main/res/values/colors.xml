@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="selected">#FFFFFFFF</color>
+    <color name="notselected">#ffA59E9E</color>
+    <color name="primaryColor">#303F9F</color>
+    <color name="primaryLightColor">#64B5F6</color>
+    <color name="primaryDarkColor">#000000</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="colorPrimary">#232121</color>
+    <color name="colorPrimaryVariant">#FFBF5757</color>
+    <color name="colorOnPrimary">#FFFFFFFF</color>
+    <color name="colorSecondary">#FFE80E4F</color>
+    <color name="colorSecondaryVariant">#FFE80E4F</color>
+    <color name="colorOnSecondary">#FF000000</color>
+
+    <color name="nightColorPrimary">#FF880E4F</color>
+    <color name="nightPrimaryVariant">#FFBF5757</color>
+    <color name="nightOnPrimary">#FFFFFFFF</color>
+    <color name="nightColorSecondary">#FFE80E4F</color>
+    <color name="NightolorSecondaryVariant">#FFE80E4F</color>
+    <color name="nightColorOnSecondary">#FF000000</color>
+
+    <color name="indigo_500">#3F51B5</color>
+    <color name="indigo_700">#303F9F</color>
+    <color name="indigo_900">#1A237E</color>
+    <color name="amber_500">#FFC107</color>
+    <color name="amber_700">#FFA000</color>
+    <color name="amber_900">#FF6F00</color>
+    <color name="lime_500">#CDDC39</color>
+    <color name="lime_700">#AFB42B</color>
+    <color name="lime_900">#827717</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="cyan_700">#0097A7</color>
+    <color name="cyan_900">#006064</color>
+    <color name="pink_500">#E91E63</color>
+    <color name="pink_700">#C2185B</color>
+    <color name="pink_900">#880E4F</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="deep_purple_700">#512DA8</color>
+    <color name="deep_purple_900">#311B92</color>
+    <color name="teal_500">#009688</color>
+
+</resources>

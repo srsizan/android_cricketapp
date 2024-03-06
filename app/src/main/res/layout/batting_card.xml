@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/constraint_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/playername"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.7"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/actor"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Shakib Al Hasan" />
+
+
+                <TextView
+                    android:id="@+id/runorover"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/playername"
+                    app:layout_constraintStart_toEndOf="@+id/playername"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="142" />
+
+                <TextView
+                    android:id="@+id/ballormaiden"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/runorover"
+                    app:layout_constraintStart_toEndOf="@+id/runorover"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="135" />
+
+
+                <TextView
+                    android:id="@+id/foursorruns"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/ballormaiden"
+                    app:layout_constraintStart_toEndOf="@+id/ballormaiden"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="135" />
+
+
+                <TextView
+                    android:id="@+id/sixorwicket"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/foursorruns"
+                    app:layout_constraintStart_toEndOf="@+id/foursorruns"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="135" />
+
+                <TextView
+                    android:id="@+id/strikerateoreconomy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@+id/sixorwicket"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="135.74" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/out_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/actor"
+                    android:maxLines="1"
+                    android:textColor="#7986CB"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/playername"
+                    tools:text="ball Mustafix catch Musfiqure" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>

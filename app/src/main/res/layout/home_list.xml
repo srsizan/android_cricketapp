@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/purple_200"
+    android:outlineAmbientShadowColor="@color/purple_200"
+    android:outlineSpotShadowColor="@color/teal_200"
+    android:id="@+id/swipe_to_refresh">
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/ranking_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:checkedButton="@id/ranking_test"
+        app:singleSelection="true">
+
+        <Button
+            android:id="@+id/ranking_test"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:insetLeft="0.5dp"
+            android:insetRight="0.5dp"
+            android:text="Test" />
+
+
+        <Button
+            android:id="@+id/ranking_odi"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:insetLeft="0.2dp"
+            android:insetRight="0.2dp"
+            android:text="Odi" />
+
+        <Button
+            android:id="@+id/ranking_t20i"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:insetLeft="0.2dp"
+            android:insetRight="0.2dp"
+            android:text="T20" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+
+
+</FrameLayout>
+
+
+
+

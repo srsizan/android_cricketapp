@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Cricket</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hometeam">HomeTeam</string>
+    <string name="awayteam">AwayTeam</string>
+    <string name="playing_xi">Playing XI</string>
+    <string name="match_info">Match Info</string>
+    <string name="match">Match</string>
+    <string name="series">Series</string>
+    <string name="date">Date</string>
+    <string name="city">City</string>
+    <string name="time">time</string>
+    <string name="no_live_matches">No Live Matches on your subscription!</string>
+</resources>

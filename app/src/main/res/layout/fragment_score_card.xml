@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/purple_200"
+    android:outlineAmbientShadowColor="@color/purple_200"
+    android:outlineSpotShadowColor="@color/teal_200"
+    android:id="@+id/swipe_to_refresh">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.HomeFragment">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/live_matches_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/battingfirst_score_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/alata"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Bangladesh" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/bowlingfirst_score_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/alata"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="West Indies" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/firstbatsum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/live_matches_cv">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/batting_score_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/actor"
+                        android:gravity=""
+                        android:padding="4dp"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Bangladesh Batting" />
+
+                    <LinearLayout
+                        android:id="@+id/constraint_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:padding="4dp"
+                        android:paddingBottom="10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/batting_score_tv">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2.7"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/actor"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Batsman" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/playername"
+                            app:layout_constraintStart_toEndOf="@+id/playername"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Runs" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/runorover"
+                            app:layout_constraintStart_toEndOf="@+id/runorover"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Balls" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/ballormaiden"
+                            app:layout_constraintStart_toEndOf="@+id/ballormaiden"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="4's" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/foursorruns"
+                            app:layout_constraintStart_toEndOf="@+id/foursorruns"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="6's" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="2"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/sixorwicket"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Strike\nRate" />
+                    </LinearLayout>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/battingRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:layout_constraintTop_toBottomOf="@+id/constraint_item"
+                        app:spanCount="1"
+                        tools:itemCount="11"
+                        tools:listitem="@layout/batting_card" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bowlingcardcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstbatsum">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bowling_score_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorPrimary"
+                        android:fontFamily="@font/actor"
+                        android:padding="4dp"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="West Indies Bowling" />
+
+
+                    <LinearLayout
+                        android:id="@+id/bowlingtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:paddingBottom="10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/bowling_score_tv">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2.7"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/actor"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Bowler" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.75"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/playername"
+                            app:layout_constraintStart_toEndOf="@+id/playername"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Over" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/runorover"
+                            app:layout_constraintStart_toEndOf="@+id/runorover"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Meiden" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="0.75"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/ballormaiden"
+                            app:layout_constraintStart_toEndOf="@+id/ballormaiden"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Runs" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/foursorruns"
+                            app:layout_constraintStart_toEndOf="@+id/foursorruns"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Wicket" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="2"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="@+id/sixorwicket"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:text="Eco" />
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/bowlingRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:layout_constraintTop_toBottomOf="@+id/bowlingtv"
+                        app:spanCount="1"
+                        tools:itemCount="6"
+                        tools:listitem="@layout/batting_card" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+
+</FrameLayout>
